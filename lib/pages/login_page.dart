@@ -17,11 +17,11 @@ class _LoginPageState extends State<LoginPage> {
     final usuarioEnv = dotenv.env['USUARIO'];
     final usuarioDigitado = _controller.text.trim();
 
-    if (usuarioDigitado == usuarioEnv) {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (_) => const HomePage()),
-      );
+   if (usuarioDigitado.isNotEmpty && usuarioDigitado == usuarioEnv) {
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (_) => const HomePage()),
+    );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Usuário inválido')),
