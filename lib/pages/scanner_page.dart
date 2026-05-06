@@ -25,9 +25,9 @@ class _ScannerPageState extends State<ScannerPage> {
 
   final MobileScannerController _controller = MobileScannerController();
 
-  int? parseId(String raw) {
-    final regex = RegExp(r'ALUNO:(\d+)');
-    final match = regex.firstMatch(raw);
+    int? parseId(String raw) {
+        final regex = RegExp(r'ALUNO_ID:(\d+)');
+        final match = regex.firstMatch(raw);
 
     if (match != null) {
       return int.tryParse(match.group(1)!);

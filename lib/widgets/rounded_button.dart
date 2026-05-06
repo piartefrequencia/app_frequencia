@@ -1,46 +1,4 @@
 
-/*
-import 'package:flutter/material.dart';
-
-class RoundedButton extends StatelessWidget {
-  final String label;
-  final Color color;
-  final VoidCallback onTap;
-  final bool active;
-
-  const RoundedButton({
-    super.key,
-    required this.label,
-    required this.color,
-    required this.onTap,
-    this.active = false,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.symmetric(
-          horizontal: 20,
-          vertical: 12,
-        ),
-        decoration: BoxDecoration(
-          color: active ? Colors.blue : color,
-          borderRadius: BorderRadius.circular(12),
-        ),
-        child: const Text(
-          'label',
-          style: TextStyle(
-            color: Colors.white,
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-*/
 
 import 'package:flutter/material.dart';
 

@@ -12,7 +12,7 @@ extension ModoLabel on ModoAcao {
         return "ENTRADA";
 
       case ModoAcao.saida:
-        return "SAÍDA";
+        return "SAIDA";
 
       case ModoAcao.nenhuma:
       default:

@@ -3,12 +3,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-
-const bool isDevelopment = true; 
-
-const String API_BASE = isDevelopment 
-    ? "http://192.168.1.110:8080/api/artefrequencia" 
-    : "https://apiartefrequencia.onrender.com/api/artefrequencia";
+const String API_BASE;
 
 class ApiClient {
   static Future<bool> registrar({

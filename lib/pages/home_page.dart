@@ -334,18 +334,15 @@ class HomePage extends StatefulWidget {
   @override
   State<HomePage> createState() => _HomePageState();
 }
-
 class _HomePageState extends State<HomePage> {
   ModoAcao _modo = ModoAcao.nenhuma;
 
   void _setModo(ModoAcao modo) {
     setState(() => _modo = modo);
   }
-
   void _reset() {
     setState(() => _modo = ModoAcao.nenhuma);
   }
-
   void _abrirCamera() {
     if (_modo == ModoAcao.nenhuma) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -355,7 +352,6 @@ class _HomePageState extends State<HomePage> {
       );
       return;
     }
-
     Navigator.push(
       context,
       MaterialPageRoute(
